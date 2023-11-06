@@ -40,3 +40,10 @@ content2.style.borderColor = "black";
 content2.style.borderStyle = "solid";
 
 container.appendChild(content2);
+
+// EVENTS
+const btn = document.querySelector("#btn");
+btn.addEventListener("click", () => {
+  alert("Hello World");
+});
+//btn.onclick = () => alert("Hello World");
