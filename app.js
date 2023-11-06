@@ -43,7 +43,21 @@ container.appendChild(content2);
 
 // EVENTS
 const btn = document.querySelector("#btn");
-btn.addEventListener("click", () => {
+/* btn.addEventListener("click", () => {
   alert("Hello World");
+}); */
+
+function alertFunction() {
+  alert("YAY! YOU DID IT!");
+}
+
+// Method 1
+// btn.onclick = alertFunction;
+
+// Method 2
+// btn.addEventListener("click", alertFunction);
+
+btn.addEventListener("click", function (e) {
+  //console.log(e.target);
+  e.target.style.background = "blue";
 });
-//btn.onclick = () => alert("Hello World");
